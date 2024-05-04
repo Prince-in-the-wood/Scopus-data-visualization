@@ -38,7 +38,7 @@ def set_publication_name(publication_name, publication_name_list):
     global selected_publication
     selected_publication = publication_name if len(publication_name) > 0 else publication_name_list
 
-coord_df = pd.read_csv("data/all_city_country/coordinates/coordinates.csv")
+coord_df = pd.read_csv("./data/all_city_country/coordinates/coordinates.csv")
 coord_df = coord_df.rename(columns={
                 "original_affiliation-city": "affiliation-city",
                 "original_affiliation-country": "affiliation-country",

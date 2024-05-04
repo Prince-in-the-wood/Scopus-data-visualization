@@ -39,8 +39,8 @@ def format_data(df):
 
 @st.cache_data
 def load_and_format():
-    given_df = load_data('./data/dataset/scopusToCSV_FromAjarn.csv')
-    scraped_df = load_data('./data/dataset/scopusToCSV.csv')
+    given_df = load_data('src/data/dataset/scopusToCSV_FromAjarn.csv')
+    scraped_df = load_data('src/data/dataset/scopusToCSV.csv')
 
     given_df = format_data(given_df)
     scraped_df = format_data(scraped_df)
